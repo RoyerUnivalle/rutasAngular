@@ -6,6 +6,13 @@ import { AppComponent } from './app.component';
 import { Catalogo1Component } from './catalogo/catalogo1/catalogo1.component';
 import { Catalogo2Component } from './catalogo/catalogo2/catalogo2.component';
 
+// CORE
+
+import { HttpClientModule } from '@angular/common/http';
+
+// services
+// import { ApiService } from './services/api.service'; // IMPORTAR
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +21,8 @@ import { Catalogo2Component } from './catalogo/catalogo2/catalogo2.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

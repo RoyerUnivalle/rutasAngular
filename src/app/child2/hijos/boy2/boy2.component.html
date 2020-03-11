@@ -1,1 +1,8 @@
 <p>boy2 works!</p>
+
+<p>Agenda:</p>
+  <ul>
+    <li *ngFor="let item of data">
+      {{item.trabajo.id_trabajo}}-{{ item.trabajo.nombre_trabajo}}
+    </li>
+  </ul>
